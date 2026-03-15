@@ -1,6 +1,7 @@
 {
   "project_name": "My Kotlin Project",
   "project_slug": "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
+  "artifact_name": "{{ cookiecutter.project_name | lower | replace(' ', '') }}",
   "class_name": "{{ cookiecutter.project_name.replace('-', ' ').replace('_', ' ').split() | map('capitalize') | join('') }}",
   "package_base": "com.example",
   "package_name": "{{ cookiecutter.package_base }}.{{ cookiecutter.project_name | lower | replace(' ', '') }}",
