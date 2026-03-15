@@ -79,7 +79,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "{{ cookiecutter.package_name }}"
-            packageVersion = "{{ cookiecutter.version }}"
+            packageVersion = "1.0.0"
         }
     }
 }
