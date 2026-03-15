@@ -1,0 +1,16 @@
+{
+  "name": "KotlinProject",
+  "repo_name": "{{ cookiecutter.name | replace('-', ' ') | replace('_', ' ') | title | replace(' ', '') }}",
+  "package_name": "com.example.{{ cookiecutter.name | lower | replace(' ', '_') }}",
+  "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
+  "group": "{{ cookiecutter.package_name }}",
+  "version": "0.0.1",
+  "kotlin_version": "2.3.10",
+  "gradle_version": "9.4.0",
+  "use_git": "y",
+  "_copy_without_render": [
+    "gradlew",
+    "gradlew.bat",
+    "gradle/wrapper/gradle-wrapper.jar"
+  ]
+}
