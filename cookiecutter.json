@@ -4,7 +4,7 @@
   "package_name": "com.example.{{ cookiecutter.name | lower | replace(' ', '_') }}",
   "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
   "group": "{{ cookiecutter.package_name }}",
-  "version": "0.0.1",
+  "version": "0.0.1-SNAPSHOT",
   "kotlin_version": "2.3.10",
   "gradle_version": "9.4.0",
   "use_git": "y",
