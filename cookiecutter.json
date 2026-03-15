@@ -1,12 +1,13 @@
 {
-  "name": "KotlinProject",
-  "repo_name": "{{ cookiecutter.name | replace('-', ' ') | replace('_', ' ') | title | replace(' ', '') }}",
-  "package_name": "com.example.{{ cookiecutter.name | lower | replace(' ', '_') }}",
+  "project_name": "My Kotlin Project",
+  "project_slug": "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
+  "class_name": "{{ cookiecutter.project_name.replace('-', ' ').replace('_', ' ').split() | map('capitalize') | join('') }}",
+  "package_base": "com.example",
+  "package_name": "{{ cookiecutter.package_base }}.{{ cookiecutter.project_name | lower | replace(' ', '') }}",
   "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
   "group": "{{ cookiecutter.package_name }}",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.1.0",
   "kotlin_version": "2.3.10",
-  "gradle_version": "9.4.0",
   "use_git": "y",
   "_copy_without_render": [
     "gradlew",

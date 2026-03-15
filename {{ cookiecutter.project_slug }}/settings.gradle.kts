@@ -1,4 +1,4 @@
-rootProject.name = "{{ cookiecutter.repo_name }}"
+rootProject.name = "{{ cookiecutter.class_name }}"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
