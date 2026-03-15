@@ -8,6 +8,7 @@
   "group": "{{ cookiecutter.package_name }}",
   "version": "0.1.0",
   "kotlin_version": "2.3.10",
+  "gradle_version": "9.4.0",
   "use_git": "y",
   "_copy_without_render": [
     "gradlew",
